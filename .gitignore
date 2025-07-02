@@ -1,0 +1,5 @@
+# Ignore installed npm modules
+node_modules/
+
+_site/
+.cache

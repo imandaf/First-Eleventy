@@ -1,0 +1,24 @@
+{
+  "name": "eleventy-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website generated with Eleventy (11ty) and Tailwind CSS",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/styles/tailwind.css -o ./dist/assets/styles.css --minify",
+    "dev:css": "tailwindcss -i ./src/styles/tailwind.css -o ./dist/assets/styles.css --watch",
+    "eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy",
+    "build": "npm run build:css && npx @11ty/eleventy",
+    "start": "npm-run-all --parallel dev:*",
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:site": "ELEVENTY_ENV=development npx @11ty/eleventy --serve"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@tailwindcss/typography": "^0.5.16",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.4.17"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
