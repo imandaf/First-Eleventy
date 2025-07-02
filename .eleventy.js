@@ -33,6 +33,7 @@ module.exports = function(eleventyConfig) {
       data: "_data",
       output: "docs"
     },
+    pathPrefix: "/First-Eleventy/",
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     templateFormats: ["njk", "md", "html"],
