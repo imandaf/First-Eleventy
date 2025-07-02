@@ -18,9 +18,14 @@
   <header class="py-6">
   <nav class="flex justify-between items-center">
     <a href="/" class="text-xl font-semibold">Your Name Portfolio</a>
-    <button @click="dark = !dark" class="px-3 py-1 border rounded">
-      <span x-text="dark ? 'Light Mode' : 'Dark Mode'"></span>
-    </button>
+    <div class="flex items-center space-x-6">
+      <a href="/about/" class="hover:underline">About</a>
+      <a href="/projects/" class="hover:underline">Projects</a>
+      <a href="/contact/" class="hover:underline">Contact</a>
+      <button @click="dark = !dark" class="px-3 py-1 border rounded">
+        <span x-text="dark ? 'Light Mode' : 'Dark Mode'"></span>
+      </button>
+    </div>
   </nav>
 </header>
   <main class="max-w-4xl mx-auto px-4 py-8">
