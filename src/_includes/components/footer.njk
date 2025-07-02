@@ -1,13 +1,13 @@
 <footer class="py-8 text-center text-sm text-gray-600 dark:text-gray-400">
   <div class="mb-3 space-x-4">
-    {% if site.github %}
-      <a href="{{ site.github }}" target="_blank" rel="noopener" class="hover:underline">GitHub</a>
+    {% if site.social.github %}
+      <a href="{{ site.social.github }}" target="_blank" rel="noopener" class="hover:underline">GitHub</a>
     {% endif %}
-    {% if site.linkedin %}
-      <a href="{{ site.linkedin }}" target="_blank" rel="noopener" class="hover:underline">LinkedIn</a>
+    {% if site.social.linkedin %}
+      <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener" class="hover:underline">LinkedIn</a>
     {% endif %}
-    {% if site.email %}
-      <a href="{{ site.email }}" class="hover:underline">Email</a>
+    {% if site.social.email %}
+      <a href="{{ site.social.email }}" class="hover:underline">Email</a>
     {% endif %}
   </div>
   <p>&copy; {{ currentYear }} {{ site.author }}. All rights reserved.</p>
